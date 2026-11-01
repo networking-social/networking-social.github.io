@@ -116,3 +116,12 @@ sup a { text-decoration: none; font-weight: 600; }
 .careers-note p { margin: 0; color: var(--muted); font-size: .97rem; max-width: 620px; }
 .careers-link { flex: none; font-weight: 600; text-decoration: none; color: var(--brand); border: 2px solid var(--brand); border-radius: 999px; padding: .55rem 1.1rem; }
 .careers-link:hover { background: var(--brand); color: #fff; }
+
+/* Logo */
+.brand { display: inline-flex; align-items: center; gap: .55rem; }
+.brand-mark { width: 28px; height: 28px; display: block; }
+.hero-logo { margin: 0 auto 1.6rem; line-height: 0; }
+.hero-logo img { display: block; width: min(720px, 100%); height: auto; margin: 0 auto; }
+@media (max-width: 640px) {
+  .hero-logo img { width: min(360px, 88vw); }
+}
