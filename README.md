@@ -12,7 +12,7 @@ Event website for the NeurIPS 2026 social **"How to Network at an AI Conference"
 ## What's on the page
 - Event description and the research behind it
 - The 2-hour agenda (intro, icebreakers & speed-networking, themed round tables, wrap-up & mingling)
-- Organizers: Judah Goldfeder (Columbia University), Philippe Wyder (Distyl AI), Sohei Arisaka (Kajima Corporation), Ravid Schwartz Ziv (New York University), Yoni Brander (Innodata), Chirag Sharma (Distyl AI), Karime Maamari (Distyl AI)
+- Organizers: Judah Goldfeder (Columbia University), Philippe Wyder (Distyl AI), Sohei Arisaka (Kajima Corporation), Ravid Shwartz-Ziv (New York University), Yoni Brander (Innodata), Chirag Sharma (Distyl AI), Karime Maamari (Distyl AI)
 - References
 
 ## Still to fill in
