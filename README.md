@@ -2,7 +2,7 @@
 
 Event website for the NeurIPS 2026 social **"How to Network at an AI Conference"**, a lighthearted, two-hour, structured session that helps attendees turn conference networking from an awkward ordeal into real connections.
 
-**Live site:** https://gitlippe.github.io/neurips-2026-networking-social/
+**Live site:** https://networking-social.github.io/
 
 ## The event
 - **When:** Thursday, December 10, 2026, 7:00–9:00 PM Paris time (CET). The NeurIPS site lists it as "Fri, Dec 11, 2026 · 5:00 AM – 7:00 AM AEDT" (conference Sydney time).
