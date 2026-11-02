@@ -56,7 +56,7 @@ a:focus-visible, .btn:focus-visible { outline: 3px solid var(--accent); outline-
 .section-lede { color: var(--muted); max-width: 700px; font-size: 1.1rem; margin-bottom: 2.5rem; }
 .callouts { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1.25rem; margin-top: 2.5rem; }
 .callout { background: var(--card); border-radius: var(--radius); padding: 1.5rem; box-shadow: var(--shadow); }
-.callout-icon { font-size: 1.8rem; display: block; margin-bottom: .5rem; }
+.callout::before { content: ""; display: block; width: 28px; height: 3px; border-radius: 2px; background: #0ea5e9; margin-bottom: 1rem; }
 .callout p { color: var(--muted); margin: 0; font-size: 1rem; }
 sup a { text-decoration: none; font-weight: 600; }
 
