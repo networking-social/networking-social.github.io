@@ -125,3 +125,19 @@ sup a { text-decoration: none; font-weight: 600; }
 @media (max-width: 640px) {
   .hero-logo img { width: min(360px, 88vw); }
 }
+
+/* Hero photo background: blurred photo + purple tint, content stays crisp */
+.hero { position: relative; isolation: isolate; overflow: hidden; }
+.hero::before { content: ""; position: absolute; inset: -24px; z-index: -2;
+  background: url("assets/hero/networking-bg.jpg") center 30% / cover no-repeat;
+  background-image: image-set(url("assets/hero/networking-bg.webp") type("image/webp"), url("assets/hero/networking-bg.jpg") type("image/jpeg"));
+  filter: blur(5px) saturate(.9); }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: -1;
+  background:
+    radial-gradient(1200px 500px at 85% -10%, rgba(255,181,71,.22), transparent 60%),
+    radial-gradient(900px 500px at -10% 110%, rgba(120,90,255,.45), transparent 60%),
+    linear-gradient(180deg, rgba(27,20,70,.78) 0%, rgba(27,20,70,.70) 45%, rgba(27,20,70,.88) 100%); }
+@media (max-width: 640px) {
+  .hero::before { background-position: 45% 25%; filter: blur(4px) saturate(.9); }
+  .hero::after { background: linear-gradient(180deg, rgba(27,20,70,.74) 0%, rgba(27,20,70,.64) 40%, rgba(27,20,70,.86) 100%); }
+}
