@@ -2,14 +2,17 @@ BEGIN:VCALENDAR
 VERSION:2.0
 PRODID:-//neurips-2026-networking-social//EN
 CALSCALE:GREGORIAN
+METHOD:PUBLISH
 BEGIN:VEVENT
 UID:neurips2026-social-180835@networking-social.github.io
 DTSTAMP:20261101T000000Z
 DTSTART:20261210T180000Z
 DTEND:20261210T200000Z
 SUMMARY:How to Network at an AI Conference (NeurIPS 2026 Social)
-LOCATION:Palais des Congrès Room 153\, Palais des Congrès de Paris\, 2 Place de la Porte Maillot\, 75017 Paris
+LOCATION:Palais des Congrès Room 153\, Palais des Congrès de Paris\, 2 Pl
+ ace de la Porte Maillot\, 75017 Paris
 URL:https://neurips.cc/virtual/2026/loc/paris/social/180835
-DESCRIPTION:NeurIPS 2026 Paris social. Details: https://neurips.cc/virtual/2026/loc/paris/social/180835
+DESCRIPTION:NeurIPS 2026 Paris social. Details: https://neurips.cc/virtual/
+ 2026/loc/paris/social/180835
 END:VEVENT
 END:VCALENDAR
