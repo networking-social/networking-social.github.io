@@ -64,7 +64,13 @@
         <a class="btn" href="https://docs.google.com/forms/d/e/1FAIpQLScsI5bsH6cQ5GQK3ONRVxQF-Ob4T7vy3L5b-g2amlFjiYfACg/viewform" target="_blank" rel="noopener">Sign Up<span class="visually-hidden"> (opens in a new tab)</span></a>
         <a class="btn btn-ghost" href="https://join.slack.com/t/airesearchnet-tun6772/shared_invite/zt-4igrbmvq8-8EJIdHl6ZgHy_QrFPJE8_w" target="_blank" rel="noopener">Join the Slack<span class="visually-hidden"> (opens in a new tab)</span></a>
         <a class="btn btn-ghost" href="https://neurips.cc/virtual/2026/loc/paris/social/180835">View the official NeurIPS listing</a>
-        <a class="btn btn-ghost" href="neurips-2026-networking-social.ics" download>Add to calendar</a>
+        <details class="cal-menu">
+          <summary class="btn btn-ghost">Add to calendar</summary>
+          <div class="cal-options">
+            <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&amp;text=How%20to%20Network%20at%20an%20AI%20Conference%20%28NeurIPS%202026%20Social%29&amp;dates=20261210T180000Z%2F20261210T200000Z&amp;details=NeurIPS%202026%20Paris%20social.%20Details%3A%20https%3A%2F%2Fneurips.cc%2Fvirtual%2F2026%2Floc%2Fparis%2Fsocial%2F180835&amp;location=Palais%20des%20Congr%C3%A8s%20Room%20153%2C%20Palais%20des%20Congr%C3%A8s%20de%20Paris%2C%202%20Place%20de%20la%20Porte%20Maillot%2C%2075017%20Paris" target="_blank" rel="noopener">Google Calendar<span class="visually-hidden"> (opens in a new tab)</span></a>
+            <a href="neurips-2026-networking-social.ics">Apple Calendar / Outlook <span class="cal-note">(.ics file)</span></a>
+          </div>
+        </details>
         <a class="btn btn-ghost" href="#agenda">See what we'll do</a>
       </div>
     </div>
@@ -235,5 +241,13 @@
       <p><a class="footer-link" href="https://neurips.cc/virtual/2026/loc/paris/social/180835">Official NeurIPS 2026 listing</a></p>
     </div>
   </footer>
+  <script>
+    {
+      const menu = document.querySelector(".cal-menu");
+      document.addEventListener("click", (e) => { if (menu.open && !menu.contains(e.target)) menu.open = false; });
+      menu.addEventListener("click", (e) => { if (e.target.closest(".cal-options a")) menu.open = false; });
+      document.addEventListener("keydown", (e) => { if (e.key === "Escape" && menu.open) { menu.open = false; menu.querySelector("summary").focus(); } });
+    }
+  </script>
 </body>
 </html>
