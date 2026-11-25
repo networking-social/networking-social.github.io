@@ -168,3 +168,12 @@ sup a { text-decoration: none; font-weight: 600; }
   .hero::before { background-position: 45% 25%; filter: blur(4px) saturate(.9); }
   .hero::after { background: linear-gradient(180deg, rgba(27,20,70,.74) 0%, rgba(27,20,70,.64) 40%, rgba(27,20,70,.86) 100%); }
 }
+
+/* Hero buttons: one row of five equal-width buttons; stacked at equal width on narrow screens */
+.hero-inner { width: min(1040px, 92vw); }
+.cta-row { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: .75rem; }
+.cta-row .btn { display: flex; align-items: center; justify-content: center; text-align: center; white-space: nowrap; padding: .85rem 1rem; }
+.cta-row .btn:not(.btn-ghost) { border: 2px solid transparent; }
+@media (max-width: 980px) {
+  .cta-row { grid-template-columns: minmax(0, 1fr); max-width: 340px; margin: 0 auto; }
+}
