@@ -168,14 +168,3 @@ sup a { text-decoration: none; font-weight: 600; }
   .hero::before { background-position: 45% 25%; filter: blur(4px) saturate(.9); }
   .hero::after { background: linear-gradient(180deg, rgba(27,20,70,.74) 0%, rgba(27,20,70,.64) 40%, rgba(27,20,70,.86) 100%); }
 }
-
-/* Add-to-calendar menu: opens upward because .hero clips its overflow */
-.cal-menu { position: relative; }
-.cal-menu > summary { list-style: none; cursor: pointer; }
-.cal-menu > summary::-webkit-details-marker { display: none; }
-.cal-menu > summary::after { content: " \25B4"; font-size: .8em; }
-.cal-menu[open] > summary { border-color: var(--accent); }
-.cal-options { position: absolute; bottom: calc(100% + .5rem); left: 50%; transform: translateX(-50%); z-index: 5; min-width: max-content; display: grid; gap: .15rem; padding: .4rem; background: #fff; border-radius: 14px; box-shadow: 0 14px 36px rgba(0,0,0,.35); text-align: left; }
-.cal-options a { display: block; white-space: nowrap; padding: .7rem .9rem; border-radius: 10px; color: var(--brand-dark); font-weight: 600; text-decoration: none; }
-.cal-options a:hover, .cal-options a:focus-visible { background: var(--alt); }
-.cal-note { font-weight: 400; color: var(--muted); }
