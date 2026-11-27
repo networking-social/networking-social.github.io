@@ -110,11 +110,11 @@ sup a { text-decoration: none; font-weight: 600; }
 .avatar-photo { object-fit: cover; display: block; background: var(--alt); }
 .org .avatar { width: 64px; height: 64px; }
 
-/* Careers: three equal cards, same weight */
+/* Careers: four equal cards, same weight */
 .careers { margin-top: 2.5rem; }
 .careers h3 { font-size: clamp(1.45rem, 2.5vw, 1.75rem); margin: 0 0 .4rem; }
 .careers-lede { margin: 0 0 1.25rem; color: var(--muted); font-size: 1.05rem; max-width: 42rem; }
-.career-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
+.career-cards { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1rem; align-items: stretch; }
 .career-cards > li { display: flex; min-width: 0; }
 .career-card { position: relative; flex: 1; display: flex; flex-direction: column; align-items: flex-start; gap: .35rem; min-height: 100%; text-decoration: none; color: inherit; background: var(--card); border: 1px dashed #cfc6f7; border-radius: var(--radius); padding: 1.25rem 1.35rem 1.2rem; box-shadow: var(--shadow); transition: border-color .15s ease, transform .15s ease, box-shadow .15s ease; }
 .career-card:hover { border-color: var(--brand); border-style: solid; transform: translateY(-2px); box-shadow: 0 14px 32px rgba(27, 20, 70, 0.12); }
