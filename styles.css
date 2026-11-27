@@ -125,20 +125,25 @@ sup a { text-decoration: none; font-weight: 600; }
 .career-card:hover .careers-cta, .career-card:focus-visible .careers-cta { background: var(--brand); color: #fff; }
 .visually-hidden { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0; }
 @media (max-width: 899px) {
-  .career-cards { grid-template-columns: 1fr; }
-  .career-card { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-areas: "kicker cta" "name cta"; align-items: center; column-gap: 1rem; row-gap: .15rem; padding: 1rem 1.15rem; }
-  .career-kicker { grid-area: kicker; }
-  .career-name { grid-area: name; padding-bottom: 0; }
-  .careers-cta { grid-area: cta; margin-top: 0; align-self: center; }
+  /* Careers stay four across on every screen; cards get compact as they narrow */
+  .career-cards { gap: .5rem; }
+  .career-card { align-items: center; text-align: center; gap: .3rem; padding: .85rem .5rem .8rem; }
+  .career-kicker { font-size: .68rem; letter-spacing: .08em; }
+  .career-name { font-size: clamp(.8rem, 2.9vw, 1.15rem); padding-bottom: .55rem; hyphens: auto; -webkit-hyphens: auto; }
+  .careers-cta { padding: .35rem .7rem; font-size: .85rem; }
   .career-card:hover { transform: none; }
 }
-@media (max-width: 400px) {
-  .career-name { font-size: 1.08rem; }
+@media (max-width: 560px) {
+  .career-cards { gap: .35rem; }
+  .career-kicker { display: none; }
+  .career-card { padding: .7rem .3rem .65rem; border-radius: 12px; }
+  .careers-cta { padding: .3rem .5rem; font-size: .78rem; white-space: nowrap; }
 }
-@media (max-width: 350px) {
-  .career-card { display: flex; flex-direction: column; align-items: flex-start; }
-  .career-name { font-size: 1.25rem; padding-bottom: .7rem; }
-  .careers-cta { margin-top: 0; }
+@media (max-width: 380px) {
+  .career-cards { gap: .25rem; }
+  .career-card { padding: .65rem .2rem .6rem; }
+  .career-name { font-size: .74rem; }
+  .careers-cta { padding: .25rem .4rem; font-size: .7rem; }
 }
 @media (prefers-reduced-motion: reduce) {
   .career-card:hover { transform: none; }
